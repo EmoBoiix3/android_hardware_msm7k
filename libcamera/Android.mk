@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 7d8d81d3474a3605127222ce35cd1be78298b297
-BUILD_OLD_LIBCAMERA:=
+BUILD_OLD_LIBCAMERA:= true
 ifeq ($(BUILD_OLD_LIBCAMERA),true)
 
 # When zero we link against libqcamera; when 1, we dlopen libqcamera.
@@ -27,12 +23,8 @@ LOCAL_SHARED_LIBRARIES+= libdl
 endif
 
 LOCAL_MODULE:= libcamera
-
-<<<<<<< HEAD
 LOCAL_MODULE_TAGS := optional
 
-=======
->>>>>>> 7d8d81d3474a3605127222ce35cd1be78298b297
 include $(BUILD_SHARED_LIBRARY)
 
 endif # not BUILD_TINY_ANDROID
